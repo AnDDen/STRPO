@@ -43,6 +43,16 @@ namespace Task1
 
         protected void Page_Load(object sender, EventArgs e)
         {
+            TableControl.TableName = "Students";
+            TableControl.SelectFrom = "Students JOIN Discipline ON Students.DisciplineID = Discipline.DisciplineId";
+            TableControl.PrimareKeyField = "Id";
+            TableControl.Fields = new List<string>();
+            TableControl.Fields.Add("Surname");
+            TableControl.Fields.Add("Name");
+            TableControl.Fields.Add("ThirdName");
+            TableControl.Fields.Add("DisciplineName");
+            TableControl.Fields.Add("Mark");
+
             if (!IsPostBack)
             {
                 BindData();

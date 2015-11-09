@@ -151,6 +151,7 @@
     <Content Include="Account\OpenAuthProviders.ascx" />
     <Content Include="Account\Register.aspx" />
     <Content Include="Account\RegisterExternalLogin.aspx" />
+    <Content Include="Components\TableControl.ascx" />
     <Content Include="DisciplinePage.aspx" />
     <Content Include="Components\AddEditControl.ascx" />
     <Content Include="Contact.aspx" />
@@ -247,6 +248,13 @@
     </Compile>
     <Compile Include="Account\RegisterExternalLogin.aspx.designer.cs">
       <DependentUpon>RegisterExternalLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Components\TableControl.ascx.cs">
+      <DependentUpon>TableControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Components\TableControl.ascx.designer.cs">
+      <DependentUpon>TableControl.ascx</DependentUpon>
     </Compile>
     <Compile Include="DisciplinePage.aspx.cs">
       <DependentUpon>DisciplinePage.aspx</DependentUpon>

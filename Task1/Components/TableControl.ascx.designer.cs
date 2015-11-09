@@ -7,27 +7,18 @@
 // </автоматически создаваемое>
 //------------------------------------------------------------------------------
 
-namespace Task1 {
+namespace Task1.Components {
     
     
-    public partial class _Default {
+    public partial class TableControl {
         
         /// <summary>
-        /// studGrid элемент управления.
+        /// grid элемент управления.
         /// </summary>
         /// <remarks>
         /// Автоматически создаваемое поле.
         /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DataGrid studGrid;
-        
-        /// <summary>
-        /// TableControl элемент управления.
-        /// </summary>
-        /// <remarks>
-        /// Автоматически создаваемое поле.
-        /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
-        /// </remarks>
-        protected global::Task1.Components.TableControl TableControl;
+        protected global::System.Web.UI.WebControls.DataGrid grid;
     }
 }

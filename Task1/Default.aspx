@@ -1,12 +1,14 @@
 ﻿<%@ Page Title="Главная" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="Task1._Default" %>
 
+<%@ Register Src="~/Components/TableControl.ascx" TagPrefix="uc1" TagName="TableControl" %>
+
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
 
     <div class="jumbotron">
         <h1>Студенты и их успеваемость</h1>
         <p class="lead"></p>
     </div>
-
+ <!-- 
     <style>
     .gridHeader A { 
         padding-right: 30px; 
@@ -24,7 +26,7 @@
     }
 </style>
 
-    <asp:DataGrid ID="studGrid" runat="server" AutoGenerateColumns="false" CssClass="table table-bordered table-striped" UseAccessibleHeader="true"
+  <asp:DataGrid ID="studGrid" runat="server" AutoGenerateColumns="false" CssClass="table table-bordered table-striped" UseAccessibleHeader="true"
         OnDeleteCommand="studGridDeleteCommand" OnEditCommand="studGridEditCommand" OnUpdateCommand="studGridUpdateCommand" DataKeyField="ID"
         AllowPaging="true" PageSize="5" OnPageIndexChanged="studGrid_PageIndexChanged" OnSortCommand="studGrid_SortCommand" AllowSorting="true"
         HeaderStyle-CssClass="gridHeader">
@@ -38,8 +40,13 @@
             <asp:ButtonColumn CommandName="Delete" HeaderText="Удаление" Text="Удалить"></asp:ButtonColumn>
         </Columns>
         <PagerStyle Mode="NumericPages" HorizontalAlign="Center" />
-    </asp:DataGrid>
+    </asp:DataGrid> -->
+    
+    <uc1:TableControl runat="server" id="TableControl" />
+    <br>
     <a href="Add.aspx" class="btn btn-primary">Добавить запись</a>
     <a href="DisciplinePage.aspx" class="btn btn-default" style="margin-left: 10px;">Редактирование дисциплин</a>
+
+    
 
 </asp:Content>
